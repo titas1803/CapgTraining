@@ -10,12 +10,10 @@ public class ValidateEmpException extends Exception {
 
 	public ValidateEmpException() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public ValidateEmpException(String message) {
 		super(message);
-		// TODO Auto-generated constructor stub
 	}
 
 	public ValidateEmpException(List<FieldError> errors) {
