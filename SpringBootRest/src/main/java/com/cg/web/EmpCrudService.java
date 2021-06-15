@@ -4,6 +4,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import com.cg.exceptions.DeptException;
 import com.cg.exceptions.ValidateEmpException;
 import com.cg.service.IEmpService;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class EmpCrudService {
 
